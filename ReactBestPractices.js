@@ -78,4 +78,6 @@ export default App;
  *    - Keep files and folders structured logically, e.g., one component per file, using folders for related components. */
 // * 7. Avoid Deeply Nested JSX:
 // *    - Avoid deeply nested components in JSX, keep the structure shallow for better readability.
-// *
+// * 8. Avoid Unnecessary Re-Renders:
+// *    - Use memoization (React.memo, useMemo, useCallback) to prevent unnecessary re-renders.
+// */
