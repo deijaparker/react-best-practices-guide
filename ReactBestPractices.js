@@ -72,3 +72,7 @@ const App = () => {
 };
 
 export default App;
+
+/**
+ * 6. Organize Files:
+ *    - Keep files and folders structured logically, e.g., one component per file, using folders for related components. */
