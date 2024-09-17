@@ -50,3 +50,25 @@ Button.propTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
+
+/**
+ * 5. Avoid Inline Functions:
+ *    - Avoid inline functions in render as it causes the function to be re-created on every render.
+ *    - Define event handlers outside the render method to optimize performance.
+ */
+const handleButtonClick = () => {
+  console.log("Button clicked!");
+};
+
+const App = () => {
+  return (
+    <div>
+      <h1>React Best Practices</h1>
+      <UserGreeting isLoggedIn={true} />
+      <Counter />
+      <Button text="Click Me" onClick={handleButtonClick} />
+    </div>
+  );
+};
+
+export default App;
