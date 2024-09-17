@@ -31,3 +31,11 @@ const Counter = () => {
     </div>
   );
 };
+
+/**
+ * 3. Conditional Rendering:
+ *    - Render components or elements conditionally using logical operators or ternary operators.
+ */
+const UserGreeting = ({ isLoggedIn }) => {
+  return isLoggedIn ? <h2>Welcome back!</h2> : <h2>Please sign in.</h2>;
+};
