@@ -39,3 +39,14 @@ const Counter = () => {
 const UserGreeting = ({ isLoggedIn }) => {
   return isLoggedIn ? <h2>Welcome back!</h2> : <h2>Please sign in.</h2>;
 };
+
+/**
+ * 4. Prop Validation:
+ *    - Validate the props passed to components using PropTypes.
+ */
+import PropTypes from "prop-types";
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
