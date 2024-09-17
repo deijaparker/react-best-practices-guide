@@ -11,3 +11,23 @@ import React, { useState, useEffect } from "react";
 const Button = ({ text, onClick }) => {
   return <button onClick={onClick}>{text}</button>;
 };
+
+/**
+ * 2. Use Hooks Appropriately:
+ *    - UseState for state management.
+ *    - UseEffect for side effects like API calls, subscriptions.
+ */
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `Count: ${count}`; // Example of a side effect
+  }, [count]);
+
+  return (
+    <div>
+      <h1>Count: {count}</h1>
+      <Button text="Increment" onClick={() => setCount(count + 1)} />
+    </div>
+  );
+};
